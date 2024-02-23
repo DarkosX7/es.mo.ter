@@ -70,9 +70,6 @@ html{scroll-behavior:smooth;}
 
 /*Section - 2 */
 
-
-
-
 /* Footer */
 
 .footer {background-color: #5c5c5c;}
@@ -102,6 +99,7 @@ html{scroll-behavior:smooth;}
 .col-40{width: 40%; padding: 0 40px;}
 .col-33{width: 33.33%; padding: 0 15px;}
 .col-100{width: 100%; padding: 0 20px;}
+.text__title {font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color);font-size: 40px;}
 
 
 
@@ -137,6 +135,8 @@ html{scroll-behavior:smooth;}
   .hero__subtitle p {font-size: 25px; -webkit-text-stroke: 0.7px #ebf2fa;}
 
   .main__video {max-height: 100%;}
+
+  .column {flex: 0 0 100%;}
 
   /* mobile-utilites*/ 
 
