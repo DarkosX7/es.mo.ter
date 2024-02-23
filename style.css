@@ -46,7 +46,7 @@ html{scroll-behavior: smooth;}
 
 
 
-/*Content*/
+/* Hero Content */
 
 .hero__title {display: block; position: absolute; z-index: 2; text-align: center; top: 50%; left: 50%; transform: translate(-50%);text-transform: capitalize; }
 
@@ -54,21 +54,27 @@ html{scroll-behavior: smooth;}
 
 .hero__title h1 span { font-family: "Cooper Black", sans-serif; color: #f2592d; -webkit-text-fill-color: #f2592d; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7)}
 
-/* Subtitle */
-
 .hero__subtitle { display: block; position: absolute; text-align: center; z-index: 2; width: 100%; top: 75%; left: 50%; transform: translate(-50%); font-size: 2.20rem;}
 
 .hero__subtitle p { color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 1.75px #ebf2fa; font-family: "Cooper Black", sans-serif; text-shadow: 0px 3px 5px rgba(41, 41, 41, 0.7); padding: 15px;  } 
 
+/* Section */
+
 .section { border: 2px solid red; background-color: var(--background-primary); position: relative; display: flex;}
 
-.section__text {border: 2px solid red; padding: 20px 10px; margin: 5% 10%; font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px;}
+.section__text {border: 2px solid red; padding: 15px 10px; margin: 5% 10%; font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px; font-size: 40px;}
 
-.section__paragraph {color: var(--text-color); font-family: var(--secondary-text-family); font-weight: 400; font-size: 18px; line-height:30px; padding: 40px 10px; border: 2px solid red;}
+.section__paragraph {color: var(--text-color); font-family: var(--secondary-text-family); font-weight: 400; font-size: 22px; line-height:30px; padding: 40px 10px; border: 2px solid red;}
 
-.section__img {border: 2px solid red; padding: 20px 10px; position: relative; margin: 30px 0;}
+.section__img {border: 2px solid red; padding: 20px 10px; position: relative; height: fit-content; margin: 50px 0;}
 
-.footer {position: relative; width: 100%; height: auto; border: 2px solid red; background-color: var(--footer-color);}
+
+.section__icon {font-size: 80px; display: block; padding: 30px 0; border: 2px solid red; margin: 40px 20px; position: relative; float: right; color:#f2592d;}
+
+/* Footer */
+
+.footer {position: relative; width: 100%; height: auto; border: 2px solid red; background-color: var(--footer-color); bottom: 0;}
+
 
 
 
@@ -76,7 +82,7 @@ html{scroll-behavior: smooth;}
 
 
 /* utilities */
-.grid{display: flex; padding: 0 10%; flex-wrap: wrap;}
+.grid{display: flex; padding: 5% 10%; flex-wrap: wrap; min-height: 100vh;}
 .img__res {height: auto; width: 100%;}
 .col-50 {width: 50%; padding: 0 15px;}
 .col-40{width: 40%; padding: 0 15px;}
