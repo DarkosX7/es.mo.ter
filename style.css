@@ -1,9 +1,22 @@
+:root {
+  --primary-text-family: "Cooper Black", sans-serif;
+  --text-color: #30308e;
+  --secondary-text-family:"Oxygen", sans-serif;
+  --background-primary:#ebf2fa;
+  --footer-color:#3e3f3b;
+
+ 
+
+
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html{scroll-behavior: smooth;}
 
 /*header*/
 .header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #ebf2fa; box-shadow: 10px 20px 26px 0px rgba(0, 0, 0, 0.3);}
@@ -35,21 +48,40 @@
 
 /*Content*/
 
-.content__title {display: block; position: absolute; z-index: 2; text-align: center; top: 50%; left: 50%; transform: translate(-50%);text-transform: capitalize; }
+.hero__title {display: block; position: absolute; z-index: 2; text-align: center; top: 50%; left: 50%; transform: translate(-50%);text-transform: capitalize; }
 
-.content__title h1 { font-family: "Cooper Black", sans-serif; font-size: 150px; color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7); letter-spacing: 3px;}
+.hero__title h1 { font-family: "Cooper Black", sans-serif; font-size: 150px; color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7); letter-spacing: 3px;}
 
-.content__title h1 span { font-family: "Cooper Black", sans-serif; color: #f2592d; -webkit-text-fill-color: #f2592d; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7)}
+.hero__title h1 span { font-family: "Cooper Black", sans-serif; color: #f2592d; -webkit-text-fill-color: #f2592d; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7)}
 
 /* Subtitle */
 
-.content__subtitle { display: block; position: absolute; text-align: center; z-index: 2; width: 100%; top: 75%; left: 50%; transform: translate(-50%); font-size: 2.20rem;}
+.hero__subtitle { display: block; position: absolute; text-align: center; z-index: 2; width: 100%; top: 75%; left: 50%; transform: translate(-50%); font-size: 2.20rem;}
 
-.content__subtitle p { color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 1.75px #ebf2fa; font-family: "Cooper Black", sans-serif; text-shadow: 0px 3px 5px rgba(41, 41, 41, 0.7); padding: 15px;  } 
+.hero__subtitle p { color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 1.75px #ebf2fa; font-family: "Cooper Black", sans-serif; text-shadow: 0px 3px 5px rgba(41, 41, 41, 0.7); padding: 15px;  } 
+
+.section { border: 2px solid red; background-color: var(--background-primary); position: relative; display: flex;}
+
+.section__text {border: 2px solid red; padding: 20px 10px; margin: 5% 10%; font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px;}
+
+.section__paragraph {color: var(--text-color); font-family: var(--secondary-text-family); font-weight: 400; font-size: 18px; line-height:30px; padding: 40px 10px; border: 2px solid red;}
+
+.section__img {border: 2px solid red; padding: 20px 10px; position: relative; margin: 30px 0;}
+
+.footer {position: relative; width: 100%; height: auto; border: 2px solid red; background-color: var(--footer-color);}
 
 
 
 
+
+
+/* utilities */
+.grid{display: flex; padding: 0 10%; flex-wrap: wrap;}
+.img__res {height: auto; width: 100%;}
+.col-50 {width: 50%; padding: 0 15px;}
+.col-40{width: 40%; padding: 0 15px;}
+.col-33{width: 33.33%; padding: 0 15px;}
+.col-100{width: 100%; padding: 0 15px;}
 
 
 
@@ -74,22 +106,21 @@
 
   .nav-hamburger span {height: 3px;  width: 30px; background-color: #30308e; position:relative; display:block; margin: 8px auto;}  
 
-  .content__title {padding: 5px; width: 100%; text-align: center;}
+  .hero__title {padding: 5px; width: 100%; text-align: center;}
 
-  .content__title h1 {font-size: 70px; -webkit-text-stroke: 2px #ebf2fa;}
+  .hero__title h1 {font-size: 70px; -webkit-text-stroke: 2px #ebf2fa;}
 
-  .content__title h1 span {-webkit-text-stroke: 2px #ebf2fa;}
+  .hero__title h1 span {-webkit-text-stroke: 2px #ebf2fa;}
 
-  .content__subtitle {display: inline-block; padding: 0 5px; top: 65%;}
+  .hero__subtitle {display: inline-block; padding: 0 5px; top: 65%;}
 
-  .content__subtitle p {font-size: 25px; -webkit-text-stroke: 0.7px #ebf2fa;}
+  .hero__subtitle p {font-size: 25px; -webkit-text-stroke: 0.7px #ebf2fa;}
 
   .main__video {max-height: 100%;}
+
+  /* mobile-utilites*/ 
+
+  .col-33, .col-40, .col-50, .col-100 { width: 100%;}
  
-  
-
-
-
-
 }
 
