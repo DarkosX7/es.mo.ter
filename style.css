@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-html{scroll-behavior:smooth;}
+/*html{scroll-behavior:smooth;}*/
 
 /*header*/
 .header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #ebf2fa; box-shadow: 10px 20px 26px 0px rgba(0, 0, 0, 0.3);}
