@@ -4,7 +4,7 @@
   --secondary-text-family:"Oxygen", sans-serif;
   --background-primary:#ebf2fa;
   --footer-color:#3e3f3b;
-  --box-shadow: -webkit-box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5); box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5);
+  --box-shadow: box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5);
 
  
 
@@ -20,7 +20,7 @@
 /*html{scroll-behavior:smooth;}*/
 
 /*header*/
-.header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #ebf2fa; box-shadow: var(--box-shadow);}
+.header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #ebf2fa; box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5);}
 
 .header__content {min-width: 1200px; margin: 0 auto; display:flex; justify-content: space-between; align-items: center; padding: 0 50px;}
 
@@ -35,7 +35,7 @@
 
 .nav__item a {text-decoration: none; color:#30308e; letter-spacing: 1px; text-align: center; padding: 12px 30px; display: inline-block;}
 
-.nav__item a:hover {background-color: #f2592d; border-radius: 4px; color:#131375; transition: all .45s; box-shadow: var(--box-shadow);}
+.nav__item a:hover {background-color: #f2592d; border-radius: 4px; color:#131375; transition: all .45s; box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.25); -webkit-box-shadow: 7px 7px 30px 5px rgba(0,0,0,0.25);} 
 
 
 
@@ -61,6 +61,7 @@
 
 /* Section - 1*/
 
+
 .section {background-color: var(--background-primary); position: relative; display: flex;}
 
 .section__text { margin-top: 23%; font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px; font-size: 40px;}
@@ -69,14 +70,14 @@
 
 .section__img { margin-top: 15%; position: relative; }
 
-.section__img img {border-radius: 5px; box-shadow: var(--box-shadow);}
+.section__img img {border-radius: 5px; -webkit-box-shadow: 7px 7px 30px 5px rgba(0,0,0,0.25); box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.25);}
 
 /*Section - 2 */
 .gallery {background-color: var(--background-primary); padding: 30px 0; }
 
-.gallery__item {position: relative; overflow: hidden; transition: all .4s ease-in-out;}
+.gallery__item {position: relative; /*overflow: hidden;*/}
 
-.gallery__img {border-radius: 5px; box-shadow: var(--box-shadow);}
+.gallery__img {border-radius: 5px; -webkit-box-shadow: 7px 7px 30px 5px rgba(0,0,0,0.25); box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.25); -webkit-box-shadow: 7px 7px 30px 5px rgba(0,0,0,0.25); }
 
 
 
