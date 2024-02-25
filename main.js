@@ -1,26 +1,41 @@
-let item = document.querySelector('.nav-hamburger');
 
-item.addEventListener("click", function(){
-    document.body.classList.toggle('nav__links-open');
+
+let item = document.querySelector(".nav-hamburger");
+
+item.addEventListener("click", function () {
+  document.body.classList.toggle("nav__links-open");
 });
 
+// Hero Title and navbar animation at loading 
 
-let tl = gsap.timeline({ease:"power4.inOut"});
+document, addEventListener("DOMContentLoaded", function () {});
+let tl = gsap.timeline();
 
-gsap.from(".hero__title",{y:400, opacity:0, duration:1.5, ease:"power4.inOut", stagger: 0.5}).from(".hero__subtitle", {x:300, duration: 2, stagger: 0.2, ease: "Power4.inOut"});
+tl
+  .from(".header", { 
+    opacity: 0, 
+    duration: 1, 
+    y: -50, 
+    ease: "power4.inOut",
+    stagger: 0.2
+    })
+  
+    .from(".hero__title", {
+    y: 30,
+    duration: 0.5,
+    opacity: 0,
+    ease: "Power4.inOut",
+    })
+  
+  .from(".hero__subtitle", {
+    duration: 1, 
+    ease: "Power4.inOut", 
+    y: 200, 
+    opacity:0, 
+    stagger: 0.2
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Second section animation
 
 
 

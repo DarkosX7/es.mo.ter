@@ -20,7 +20,7 @@
 /*html{scroll-behavior:smooth;}*/
 
 /*header*/
-.header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; background-color: #ebf2fa; box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5);}
+.header {position: fixed; top: 0; left: 0; z-index: 3; width: 100%; opacity: 1; background-color: #ebf2fa; box-shadow: 7px 7px 30px 7px rgba(0,0,0,0.5);}
 
 .header__content {min-width: 1200px; margin: 0 auto; display:flex; justify-content: space-between; align-items: center; padding: 0 50px;}
 
@@ -41,7 +41,7 @@
 
 /*hero video-background*/
 
-.hero { height: 100vh;  position: relative; overflow: hidden;}
+.hero { height: 100vh; position: relative; overflow: hidden;}
 
 .hero .main__video { position: absolute; width: 100%; min-height: 100vh; object-fit: cover;}
 
@@ -49,7 +49,7 @@
 
 /* Hero Content */
 
-.hero__title {display: block; position: absolute; z-index: 2; text-align: center; top: 60%; left: 50%; transform: translate(-50%, -50%);text-transform: capitalize; opacity: 1;}
+.hero__title {display: block; position: absolute; z-index: 2; text-align: center; top: 68%; left: 50%; transform: translate(-50%, -50%);text-transform: capitalize; opacity: 1;}
 
 .hero__title h1 { font-family: "Cooper Black", sans-serif; font-size: 150px; color: #30308e; -webkit-text-fill-color: #30308e; -webkit-text-stroke: 3px #ebf2fa; text-shadow: 0px 7px 5px rgba(41, 41, 41, 0.7); letter-spacing: 3px;}
 
@@ -64,7 +64,7 @@
 
 .section {background-color: var(--background-primary); position: relative; display: flex;}
 
-.section__text { margin-top: 23%; font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px; font-size: 40px;}
+.section__text { margin-top: 23%;  font-family: var(--primary-text-family); font-weight: 500; text-transform: capitalize; color: var(--text-color); letter-spacing: 2px; font-size: 40px;}
 
 .section__paragraph {color: var(--text-color); font-family: var(--secondary-text-family); font-weight: 400; font-size: 22px; line-height:30px; padding: 40px 10px; margin-bottom: 30px;}
 
@@ -83,7 +83,7 @@
 
 /* Footer */
 
-.footer {background-color: #5c5c5c;}
+.footer {background-color: #5c5c5c; position:relative; bottom: 100%;}
 
 .footer__col-1 {display:flex; flex-direction: column; align-items: center; font-size: 13px; color:#ebf2fa;}
 
